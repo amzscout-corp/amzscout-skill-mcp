@@ -1,5 +1,3 @@
-# amzscout-skill-mcp
-
 # Official AMZScout Skill + MCP for AI Agents
 
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -12,7 +10,7 @@ Connect your AI agent to **real Amazon marketplace intelligence** with the offic
 
 Unlike a traditional MCP server that simply exposes APIs, AMZScout combines live marketplace data with proprietary analytical algorithms developed specifically for Amazon research. Instead of returning raw marketplace data, it delivers structured marketplace intelligence that AI assistants can immediately use to answer Amazon-related questions more accurately.
 
-Whether you're validating product ideas, researching competitors, discovering keywords, optimizing listings, or building PPC campaigns, AMZScout helps your AI make data-driven decisions based on real Amazon marketplace data—not assumptions.
+Whether you're validating product ideas, researching competitors, discovering keywords, optimizing listings, or building PPC campaigns, AMZScout helps your AI make data-driven decisions based on real Amazon marketplace data - not assumptions.
 
 > [!IMPORTANT]
 > AMZScout provides AI-powered marketplace analysis based on Amazon marketplace data. AI-generated responses are intended for informational purposes only. Please review the **Disclaimer** section below for important legal information.
@@ -32,6 +30,7 @@ Whether you're validating product ideas, researching competitors, discovering ke
 - [Quick Start](#quick-start)
 - [Installation Guides](#installation-guides)
 - [MCP Server](#mcp-server)
+- [Support](#support)
 - [Documentation](#documentation)
 - [Disclaimer](#disclaimer)
 - [License](#license)
@@ -60,7 +59,7 @@ Whether you're validating product ideas, researching competitors, discovering ke
 
 Officially supported AI clients:
 
-- ChatGPT (Plus and above)
+- ChatGPT (Plus and higher)
 - Claude
 - Cursor
 - CrewAI
@@ -330,6 +329,14 @@ https://chatbot.amzscout.net/mcp
 ```text
 API Key
 ```
+
+---
+
+## Support
+
+If you have questions about installation, configuration, or using AMZScout Skill + MCP, we're happy to help.
+
+📧 **support@amzscout.net**
 
 ---
 
