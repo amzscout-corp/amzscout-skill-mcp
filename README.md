@@ -10,6 +10,8 @@
 
 Connect your AI to **real Amazon marketplace data** with the official **AMZScout Skill + MCP**.
 
+Get Access to AMZScout Skill + MCP here: https://learn.amzscout.net/amazon-product-api-for-ai-agents
+
 Unlike a traditional MCP server that simply exposes APIs, AMZScout combines live marketplace data with proprietary analytical algorithms developed specifically for Amazon research. Instead of returning raw marketplace data, it delivers structured marketplace intelligence that AI assistants can immediately use to answer Amazon-related questions more accurately.
 
 Whether you're validating product ideas, researching competitors, discovering keywords, optimizing listings, or building PPC campaigns, AMZScout helps your AI make data-driven decisions based on real Amazon marketplace data - not assumptions.
@@ -61,8 +63,8 @@ Whether you're validating product ideas, researching competitors, discovering ke
 
 Officially supported AI clients:
 
-- ChatGPT (Plus and higher)
 - Claude
+- ChatGPT (Plus and higher)
 - Cursor
 - CrewAI
 - OpenClaw
