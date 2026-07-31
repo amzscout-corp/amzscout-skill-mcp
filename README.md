@@ -1,6 +1,6 @@
 # Official AMZScout Skill + MCP for AI
 
-
+![AMZScout Skill + MCP](assets/github-cover.png)
 
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)
