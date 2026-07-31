@@ -178,6 +178,10 @@ Most MCP servers simply expose APIs and return raw marketplace data.
 
 AMZScout adds an intelligence layer between Amazon marketplace data and your AI assistant.
 
+AMZScout MCP data includes comprehensive Amazon product metrics, including estimated sales, revenue, pricing, profitability, listing quality, and competition-related data such as the number of sellers, seller types (FBA/FBM/Amazon), seller countries, and review counts. 
+
+It also includes up to two years of historical price, sales, and revenue data, along with keyword metrics such as monthly search volume, cpc, and organic keyword rankings.
+
 ### Traditional MCP
 
 ```text
@@ -294,11 +298,11 @@ https://learn.amzscout.net/amazon-product-api-for-ai-agents
 
 Choose the token plan that best fits your needs:
 
-| Plan | Recommended for |
-|------|-----------------|
-| **1M Tokens** | Getting started and light usage |
-| **5M Tokens** | Regular AI workflows |
-| **20M Tokens** | High-volume usage and AI agents |
+| Plan | Price | Product Analyses | Usage Period | Recommended for |
+|------|-------|-------------------|--------------|------------------|
+| **1M Tokens**  | $39                  | Up to 50    | 30 days | Getting started and light usage |
+| **5M Tokens**  | ~~$195~~ **$99**     | Up to 250   | 30 days | Regular AI workflows |
+| **20M Tokens** | ~~$780~~ **$199**    | Up to 1,000 | 30 days | High-volume usage and AI agents |
 
 After completing your purchase, you'll receive an email containing:
 
