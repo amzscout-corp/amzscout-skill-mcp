@@ -8,7 +8,7 @@
 ![AI Ready](https://img.shields.io/badge/AI-Ready-success)
 ![Amazon Research](https://img.shields.io/badge/Amazon-Research-orange)
 
-Connect your AI agent to **real Amazon marketplace intelligence** with the official **AMZScout Skill + MCP**.
+Connect your AI agent to **real Amazon marketplace data** with the official **AMZScout Skill + MCP**.
 
 Unlike a traditional MCP server that simply exposes APIs, AMZScout combines live marketplace data with proprietary analytical algorithms developed specifically for Amazon research. Instead of returning raw marketplace data, it delivers structured marketplace intelligence that AI assistants can immediately use to answer Amazon-related questions more accurately.
 
@@ -41,7 +41,7 @@ Whether you're validating product ideas, researching competitors, discovering ke
 
 ## Features
 
-- 📊 Real Amazon marketplace intelligence
+- 📊 Real Amazon marketplace data
 - 🔍 Product opportunity discovery
 - 📈 Niche validation
 - 🏆 Competitor analysis
