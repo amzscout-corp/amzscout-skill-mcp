@@ -19,17 +19,6 @@ Best for a hands-off, single-call answer. The granular `amzscout_*` tools (analy
 }
 ```
 
-## Example Call (multi-turn)
-```json
-{
-  "message": "What about compared to B08XYZ1234?",
-  "history": [
-    { "role": "user", "content": "Is B07GQF9D1Z worth selling?" },
-    { "role": "assistant", "content": "Yes, moderate opportunity — see analysis..." }
-  ]
-}
-```
-
 ## Returned Data
 A complete, user-ready report combining relevant Amazon data and AI-generated analysis/verdict, tailored to the question asked.
 
