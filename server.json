@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.amzscout-corp/amzscout-skill-mcp",
+  "title": "AMZScout Skill + MCP",
+  "description": "Official AMZScout Amazon-marketplace research MCP: analyze a product by ASIN, evaluate a niche, pull keyword & PPC data, and explore a brand's Amazon catalog — from real AMZScout marketplace data.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/amzscout-corp/amzscout-skill-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://learn.amzscout.net/amazon-product-api-for-ai-agents",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://chatbot.amzscout.net/mcp"
+    }
+  ]
+}
