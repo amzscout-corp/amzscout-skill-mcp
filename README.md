@@ -10,7 +10,27 @@
 
 Connect your AI to **real Amazon marketplace data** with the official **AMZScout Skill + MCP**.
 
-Get Access to AMZScout Skill + MCP here: https://learn.amzscout.net/amazon-product-api-for-ai-agents
+Get your API key here: https://learn.amzscout.net/amazon-product-api-for-ai-agents
+
+## Connection
+
+This is a **remote (hosted) MCP server** — Streamable HTTP transport. Point your MCP client at the endpoint below; there is nothing to install.
+
+- **MCP endpoint (Streamable HTTP):** `https://chatbot.amzscout.net/mcp`
+- **Transport:** `streamable-http` (a legacy SSE endpoint is also available at `https://chatbot.amzscout.net/mcp/sse`)
+- **Authentication:** send your AMZScout API key as the `Authorization: Bearer <API_KEY>` header (or `?key=<API_KEY>` in the URL). Get a key at https://learn.amzscout.net/amazon-product-api-for-ai-agents
+
+```json
+{
+  "mcpServers": {
+    "amzscout": {
+      "type": "streamable-http",
+      "url": "https://chatbot.amzscout.net/mcp",
+      "headers": { "Authorization": "Bearer YOUR_AMZSCOUT_API_KEY" }
+    }
+  }
+}
+```
 
 Unlike a traditional MCP server that simply exposes APIs, AMZScout combines live marketplace data with proprietary analytical algorithms developed specifically for Amazon research. Instead of returning raw marketplace data, it delivers structured marketplace intelligence that AI assistants can immediately use to answer Amazon-related questions more accurately.
 
