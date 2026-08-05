@@ -7,7 +7,6 @@
 ![Hosted Service](https://img.shields.io/badge/Hosted-Service-6f42c1)
 ![AI Ready](https://img.shields.io/badge/AI-Ready-success)
 ![Amazon Research](https://img.shields.io/badge/Amazon-Research-orange)
-[![smithery badge](https://smithery.ai/badge/support-mruz/amzscout-skill-mcp)](https://smithery.ai/servers/support-mruz/amzscout-skill-mcp)
 
 Connect your AI to **real Amazon marketplace data** with the official **AMZScout Skill + MCP**.
 
