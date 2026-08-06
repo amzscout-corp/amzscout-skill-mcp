@@ -320,9 +320,9 @@ Choose the token plan that best fits your needs:
 
 | Plan | Price | In-depth Research Sessions | Usage Period | Recommended for |
 |------|-------|-------------------|--------------|------------------|
-| **1M Tokens**  | $39                  | Up to 50    | 30 days | Getting started and light usage |
-| **5M Tokens**  | ~~$195~~ **$99**     | Up to 250   | 30 days | Regular AI workflows |
-| **20M Tokens** | ~~$780~~ **$199**    | Up to 1,000 | 30 days | High-volume usage and AI agents |
+| **1M Tokens**  | $39                  | Up to 100    | 30 days | Getting started and light usage |
+| **5M Tokens**  | ~~$195~~ **$99**     | Up to 500   | 30 days | Regular AI workflows |
+| **20M Tokens** | ~~$780~~ **$199**    | Up to 2,000 | 30 days | High-volume usage and AI agents |
 
 After completing your purchase, you'll receive an email containing:
 
