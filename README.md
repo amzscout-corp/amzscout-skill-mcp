@@ -318,7 +318,7 @@ https://learn.amzscout.net/amazon-product-api-for-ai-agents
 
 Choose the token plan that best fits your needs:
 
-| Plan | Price | Product Analyses | Usage Period | Recommended for |
+| Plan | Price | In-depth Research Sessions | Usage Period | Recommended for |
 |------|-------|-------------------|--------------|------------------|
 | **1M Tokens**  | $39                  | Up to 50    | 30 days | Getting started and light usage |
 | **5M Tokens**  | ~~$195~~ **$99**     | Up to 250   | 30 days | Regular AI workflows |
