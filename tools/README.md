@@ -4,7 +4,6 @@ This folder documents every tool exposed by the AMZScout MCP server.
 
 | Tool | What it does |
 |------|--------------|
-| [`amzscout-agent`](./amzscout-agent.md) | All-in-one natural-language Amazon research assistant |
 | [`amzscout_analyze_product`](./amzscout_analyze_product.md) | Full raw data for a single product by ASIN |
 | [`amzscout_compare_products`](./amzscout_compare_products.md) | Side-by-side raw data for 2–5 products |
 | [`amzscout_analyze_product_set`](./amzscout_analyze_product_set.md) | Raw data + aggregates across 2–100 ASINs |
