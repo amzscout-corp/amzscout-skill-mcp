@@ -136,12 +136,6 @@ AMZScout provides marketplace data across all major Amazon marketplaces:
 
 Full documentation for every tool is available in [`/tools`](./tools).
 
-## Core Assistant
-
-| Tool | Description |
-|------|-------------|
-| `amzscout-agent` | All-in-one natural-language Amazon research assistant that automatically selects the appropriate research workflow. |
-
 ## Product Research
 
 | Tool | Description |
