@@ -18,6 +18,5 @@ This folder documents every tool exposed by the AMZScout MCP server.
 
 ## Choosing between tools
 
-- Want a finished, ready-to-read analysis in one call? Use **`amzscout-agent`**.
 - Want raw data to reason over yourself, with full control? Use the granular `amzscout_*` tools above.
 - Working with a single product vs. a set vs. a niche: `analyze_product` → `analyze_product_set` → `analyze_niche` (or their `compare_*` counterparts) scale up in scope.
