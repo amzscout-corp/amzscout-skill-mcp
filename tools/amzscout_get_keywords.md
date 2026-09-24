@@ -11,14 +11,15 @@ Amazon keyword / SEO / PPC data for either a single product (ASIN-scope — term
 |------|------|----------|--------------|
 | `asin` | string | No* | ASIN-scope: keywords this product ranks for |
 | `keyword` | string | No* | Keyword-scope: search data around this niche term (2–100 chars) |
-| `marketplace` | string | No | Amazon marketplace code. Default: `COM` (United States). |
+| `marketplace` | string | Depends | Amazon marketplace code. **With `asin`: required** — without it (and without `?marketplace=` in the connection URL) the tool fetches nothing and replies `MARKETPLACE NEEDED`, free of charge; ask the user once which marketplace they work on and reuse it for the conversation. **With `keyword`: optional**, default `COM` (United States). |
 
 \* Provide either `asin` or `keyword` to scope the request.
 
 ## Example Call (ASIN scope)
 ```json
 {
-  "asin": "B07GQF9D1Z"
+  "asin": "B07GQF9D1Z",
+  "marketplace": "COM"
 }
 ```
 
@@ -32,6 +33,8 @@ Amazon keyword / SEO / PPC data for either a single product (ASIN-scope — term
 ## Returned Data (fields may include)
 - Keyword rows with search volume, CPC, competition level
 - For ASIN scope: organic and sponsored rank per keyword
+
+CPC is in the marketplace's local currency.
 
 ## Related Tools
 - [`amzscout_analyze_niche`](./amzscout_analyze_niche.md) — broader niche market snapshot
