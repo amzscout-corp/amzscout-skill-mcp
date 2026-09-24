@@ -12,9 +12,10 @@ For a single ASIN, use [`amzscout_analyze_product`](./amzscout_analyze_product.m
 | Name | Type | Required | Description |
 |------|------|----------|--------------|
 | `asins` | array of strings | Yes | 2–5 ASINs to compare. Each must be a real Amazon ASIN (format `B0XXXXXXXX`). 0/O-swapped prefixes are auto-corrected. |
-| `marketplace` | string | No | Amazon marketplace code. Default: `COM` (United States). |
+| `marketplace` | string | Yes* | Amazon marketplace code — all ASINs are looked up on this one marketplace. *Without it (and without `?marketplace=` in the connection URL) the tool fetches nothing and replies `MARKETPLACE NEEDED`, free of charge: the same ASIN is a separate listing on each marketplace, so it is never assumed to be the US. Ask the user once which marketplace they work on, then reuse it for the rest of the conversation. |
 
 ## Example Call
+
 ```json
 {
   "asins": ["B07GQF9D1Z", "B08XYZ1234"],
@@ -27,6 +28,9 @@ For a single ASIN, use [`amzscout_analyze_product`](./amzscout_analyze_product.m
 - Listing quality score per product
 - Historical trend data where available
 
+Prices and revenue are in the marketplace's local currency.
+
 ## Related Tools
 - [`amzscout_analyze_product`](./amzscout_analyze_product.md) — single-product deep dive
 - [`amzscout_analyze_product_set`](./amzscout_analyze_product_set.md) — up to 100 ASINs with market-level aggregates
+```
