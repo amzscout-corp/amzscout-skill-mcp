@@ -73,11 +73,11 @@ Whether you're validating product ideas, researching competitors, discovering ke
 - 💰 Sales estimates
 - 📉 Historical marketplace trends
 - 💵 Pricing analysis
+- 🌍 Cross-marketplace ASIN lookup
+- 🔁 Reseller & buy box insights
 - 🤖 AI-ready structured responses
 - 🧠 Marketplace intelligence powered by AMZScout
 - ⚡ Fast responses optimized for AI workflows
-- 🌍 Cross-marketplace ASIN lookup
-- 🔁 Reseller & buy box insights
 
 ---
 
@@ -130,6 +130,7 @@ AMZScout provides marketplace data across all major Amazon marketplaces:
 | Sales Estimates | ✅ |
 | Pricing Analysis | ✅ |
 | Historical Marketplace Trends | ✅ |
+| Arbitrage & Resale | ✅ |
 | AI-ready Structured Responses | ✅ |
 
 ---
@@ -186,9 +187,9 @@ AMZScout Skill + MCP helps AI agents perform real Amazon marketplace research ac
 | ✍️ Listing Optimization | Improve titles, bullet points, descriptions, and keyword coverage. |
 | 📈 PPC Planning | Build launch and optimization strategies using keyword and competitor data. |
 | 💰 Pricing Analysis | Compare prices, estimate sales potential, and identify pricing opportunities. |
-| 📉 Market Intelligence | Analyze historical trends, emerging niches, and marketplace dynamics. |
 | 🌍 Cross-Marketplace Pricing | Find where an ASIN is sold across Amazon marketplaces and compare local prices. |
 | 🔁 Arbitrage & Resale | Analyze buy box ownership, offer counts, and seller competition for resale strategy. |
+| 📉 Market Intelligence | Analyze historical trends, emerging niches, and marketplace dynamics. |
 
 ---
 
@@ -301,13 +302,6 @@ These prompts work in ChatGPT, Claude, Cursor, CrewAI, OpenClaw, and other MCP-c
 - Compare pricing with competitors.
 - Estimate revenue potential.
 
-### Market Intelligence
-
-- Show historical sales trends.
-- Compare the US and UK marketplaces.
-- Find fast-growing Amazon niches.
-- Identify emerging product opportunities.
-
 ### Arbitrage & Reselling
 
 - On which Amazon marketplaces is ASIN B0XXXXXXXX sold, and what does it cost in each?
@@ -315,6 +309,13 @@ These prompts work in ChatGPT, Claude, Cursor, CrewAI, OpenClaw, and other MCP-c
 - How many FBA and FBM sellers compete on this listing?
 - Does Amazon sell this product itself?
 - Compare prices for this ASIN across all marketplaces where it's listed.
+
+### Market Intelligence
+
+- Show historical sales trends.
+- Compare the US and UK marketplaces.
+- Find fast-growing Amazon niches.
+- Identify emerging product opportunities.
 
 ---
 
