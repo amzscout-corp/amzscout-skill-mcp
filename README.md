@@ -76,6 +76,8 @@ Whether you're validating product ideas, researching competitors, discovering ke
 - 🤖 AI-ready structured responses
 - 🧠 Marketplace intelligence powered by AMZScout
 - ⚡ Fast responses optimized for AI workflows
+- 🌍 Cross-marketplace ASIN lookup
+- 🔁 Reseller & buy box insights
 
 ---
 
@@ -145,6 +147,8 @@ Full documentation for every tool is available in [`/tools`](./tools).
 | `amzscout_analyze_product_set` | Analyze and aggregate metrics across 2–100 ASINs. |
 | `amzscout_search_products` | Search Amazon products by keyword using marketplace data. |
 | `amzscout_find_by_brand` | Retrieve products published under a specific Amazon brand. |
+| `amzscout_locate_asin` | Find which Amazon marketplaces list an ASIN, with local prices and sales estimates. |
+| `amzscout_reseller_amazon` | Get buy box, offer, and sales-rank data for one ASIN — useful for online arbitrage. |
 
 ## Market & Niche Research
 
@@ -183,6 +187,8 @@ AMZScout Skill + MCP helps AI agents perform real Amazon marketplace research ac
 | 📈 PPC Planning | Build launch and optimization strategies using keyword and competitor data. |
 | 💰 Pricing Analysis | Compare prices, estimate sales potential, and identify pricing opportunities. |
 | 📉 Market Intelligence | Analyze historical trends, emerging niches, and marketplace dynamics. |
+| 🌍 Cross-Marketplace Pricing | Find where an ASIN is sold across Amazon marketplaces and compare local prices. |
+| 🔁 Arbitrage & Resale | Analyze buy box ownership, offer counts, and seller competition for resale strategy. |
 
 ---
 
@@ -235,6 +241,8 @@ Instead of raw data, your AI receives structured marketplace intelligence, inclu
 - Keyword opportunities
 - Pricing insights
 - PPC insights
+- Reseller & buy box insights
+- Cross-marketplace availability
 - Actionable business guidance
 
 ---
@@ -299,6 +307,14 @@ These prompts work in ChatGPT, Claude, Cursor, CrewAI, OpenClaw, and other MCP-c
 - Compare the US and UK marketplaces.
 - Find fast-growing Amazon niches.
 - Identify emerging product opportunities.
+
+### Arbitrage & Reselling
+
+- On which Amazon marketplaces is ASIN B0XXXXXXXX sold, and what does it cost in each?
+- Who holds the buy box for this ASIN, and at what price?
+- How many FBA and FBM sellers compete on this listing?
+- Does Amazon sell this product itself?
+- Compare prices for this ASIN across all marketplaces where it's listed.
 
 ---
 
