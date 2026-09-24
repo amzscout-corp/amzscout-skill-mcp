@@ -12,6 +12,8 @@ This folder documents every tool exposed by the AMZScout MCP server.
 | [`amzscout_search_products`](./amzscout_search_products.md) | Keyword search returning raw product rows |
 | [`amzscout_find_by_brand`](./amzscout_find_by_brand.md) | List products under a specific brand |
 | [`amzscout_get_keywords`](./amzscout_get_keywords.md) | Keyword / SEO / PPC data (ASIN or niche scope) |
+| [`amzscout_locate_asin`](./amzscout_locate_asin.md) | Marketplace availability + local prices for an ASIN |
+| [`amzscout_reseller_amazon`](./amzscout_reseller_amazon.md) | Buy box, offer counts, and sales-rank data for an ASIN |
 | [`amzscout_recommend_tool`](./amzscout_recommend_tool.md) | Recommend the right AMZScout tool for a use case |
 | [`amzscout_search_knowledge`](./amzscout_search_knowledge.md) | Search the AMZScout knowledge base |
 | [`amzscout_usage`](./amzscout_usage.md) | Check remaining AI-agent token balance |
