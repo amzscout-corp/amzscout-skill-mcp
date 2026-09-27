@@ -15,6 +15,7 @@ To discover products from a keyword instead of a fixed ASIN list, use [`amzscout
 | `marketplace` | string | Yes* | Amazon marketplace code — all ASINs are looked up on this one marketplace. *Without it (and without `?marketplace=` in the connection URL) the tool fetches nothing and replies `MARKETPLACE NEEDED`, free of charge: the same ASIN is a separate listing on each marketplace, so it is never assumed to be the US. Ask the user once which marketplace they work on, then reuse it for the rest of the conversation. |
 
 ## Example Call
+
 ```json
 {
   "asins": ["B07GQF9D1Z", "B08XYZ1234", "B09ABCD567"],

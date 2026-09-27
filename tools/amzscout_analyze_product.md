@@ -13,6 +13,7 @@ Returns full raw data for a single Amazon product by ASIN — price, estimated s
 | `marketplace` | string | Yes* | Amazon marketplace code. One of: `COM`, `CO_UK`, `DE`, `FR`, `IT`, `ES`, `CA`, `COM_MX`, `COM_BR`, `IN`, `CO_JP`, `COM_AU`, `AE`, `SA`. *Without it (and without `?marketplace=` in the connection URL) the tool fetches nothing and replies `MARKETPLACE NEEDED`, free of charge: the same ASIN is a separate listing on each marketplace, so it is never assumed to be the US. Ask the user once which marketplace they work on, then reuse it for the rest of the conversation. |
 
 ## Example Call
+
 ```json
 {
   "asin": "B07GQF9D1Z",
