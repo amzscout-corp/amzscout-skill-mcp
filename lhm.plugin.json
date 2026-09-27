@@ -1,11 +1,12 @@
 {
   "identifier": "amzscout-corp-amzscout-skill-mcp",
   "name": "Official AMZScout Skill + MCP for AI",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "connectionType": "remote",
-  "description": "AMZScout Skill + MCP provides AI-powered marketplace analysis based on real Amazon marketplace data combined with proprietary analytical algorithms. It delivers structured marketplace intelligence for Amazon research. Requires an API key obtained from https://learn.amzscout.net/amazon-product-api-for-ai-agents.",
+  "description": "AMZScout Skill + MCP connects AI assistants to real Amazon marketplace data across 14 Amazon marketplaces: product and niche analysis, keyword and PPC research, brand catalogs, reseller and buy box insights, and cross-marketplace ASIN lookup, combined with AMZScout's proprietary analytical algorithms. Requires an API key obtained from https://learn.amzscout.net/amazon-product-api-for-ai-agents.",
+  "cloudEndpoint": "https://chatbot.amzscout.net/mcp",
   "overview": {
-    "readme": "# Official AMZScout Skill + MCP for AI\n\n![AMZScout Skill + MCP](assets/github-cover.png)\n\n![License](https://img.shields.io/badge/License-MIT-green)\n![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)\n![Hosted Service](https://img.shields.io/badge/Hosted-Service-6f42c1)\n![AI Ready](https://img.shields.io/badge/AI-Ready-success)\n![Amazon Research](https://img.shields.io/badge/Amazon-Research-orange)\n[![smithery badge](https://smithery.ai/badge/support-mruz/amzscout-skill-mcp)](https://smithery.ai/servers/support-mruz/amzscout-skill-mcp)\n\nConnect your AI to **real Amazon marketplace data** with the official **AMZScout Skill + MCP**.\n\nGet Access to AMZScout Skill + MCP here: https://learn.amzscout.net/amazon-product-api-for-ai-agents\n\nUnlike a traditional MCP server that simply exposes APIs, AMZScout combines live marketplace data with proprietary analytical algorithms developed specifically for Amazon research. Instead of returning raw marketplace data, it delivers structured marketplace intelligence that AI assistants can immediately use to answer Amazon-related questions more accurately.\n\nWhether you're validating product ideas, researching competitors, discovering keywords, optimizing listings, or building PPC campaigns, AMZScout helps your AI make data-driven decisions based on real Amazon marketplace data - not assumptions.\n\n> [!IMPORTANT]\n> AMZScout provides AI-powered marketplace analysis based on Amazon marketplace data. AI-generated responses are intended for informational purposes only. Please review the **Disclaimer** section below for important legal information.\n\n---\n\n## Table of Contents\n\n- [Features](#features)\n- [Supported AI Clients](#supported-ai-clients)\n- [Supported Amazon Marketplaces](#supported-amazon-marketplaces)\n- [Supported Capabilities](#supported-capabilities)\n- [Available Tools](#available-tools)\n- [Use Cases](#use-cases)\n- [How It Works](#how-it-works)\n- [Prompt Library](#prompt-library)\n- [Quick Start](#quick-start)\n- [Installation Guides](#installation-guides)\n- [MCP Server](#mcp-server)\n- [Support](#support)\n- [Documentation](#documentation)\n- [Disclaimer](#disclaimer)\n- [License](#license)\n\n---\n\n## Features\n\n- 📊 Real Amazon marketplace data\n- 🔍 Product opportunity discovery\n- 📈 Niche validation\n- 🏆 Competitor analysis\n- 🔑 Keyword research\n- ✍️ Listing optimization\n- 🎯 PPC strategy generation\n- 💰 Sales estimates\n- 📉 Historical marketplace trends\n- 💵 Pricing analysis\n- 🤖 AI-ready structured responses\n- 🧠 Marketplace intelligence powered by AMZScout\n- ⚡ Fast responses optimized for AI workflows\n\n---\n\n## Supported AI Clients\n\nOfficially supported AI clients:\n\n- Claude\n- ChatGPT (Plus and higher)\n- Cursor\n- CrewAI\n- OpenClaw\n\n> Other MCP-compatible AI clients are also supported.\n\n---\n\n## Supported Amazon Marketplaces\n\nAMZScout provides marketplace data across all major Amazon marketplaces:\n\n- 🇺🇸 United States\n- 🇨🇦 Canada\n- 🇲🇽 Mexico\n- 🇧🇷 Brazil\n- 🇬🇧 United Kingdom\n- 🇩🇪 Germany\n- 🇫🇷 France\n- 🇮🇹 Italy\n- 🇪🇸 Spain\n- 🇦🇺 Australia\n- 🇯🇵 Japan\n- 🇮🇳 India\n- 🇦🇪 United Arab Emirates\n- 🇸🇦 Saudi Arabia\n\n---\n\n## Supported Capabilities\n\n| Capability | Supported |\n|------------|:---------:|\n| Product Research | ✅ |\n| Product Discovery | ✅ |\n| Niche Validation | ✅ |\n| Competitor Analysis | ✅ |\n| Keyword Research | ✅ |\n| Listing Optimization | ✅ |\n| PPC Strategy | ✅ |\n| Sales Estimates | ✅ |\n| Pricing Analysis | ✅ |\n| Historical Marketplace Trends | ✅ |\n| AI-ready Structured Responses | ✅ |\n\n---\n\n# Available Tools\n\nFull documentation for every tool is available in [`/tools`](./tools).\n\n## Core Assistant\n\n| Tool | Description |\n|------|-------------|\n| `amzscout-agent` | All-in-one natural-language Amazon research assistant that automatically selects the appropriate research workflow. |\n\n## Product Research\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_analyze_product` | Retrieve complete marketplace data and insights for a single ASIN. |\n| `amzscout_compare_products` | Compare 2–5 Amazon products side by side. |\n| `amzscout_analyze_product_set` | Analyze and aggregate metrics across 2–100 ASINs. |\n| `amzscout_search_products` | Search Amazon products by keyword using marketplace data. |\n| `amzscout_find_by_brand` | Retrieve products published under a specific Amazon brand. |\n\n## Market & Niche Research\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_analyze_niche` | Analyze demand, competition, pricing, and market health for a niche. |\n| `amzscout_compare_niches` | Compare multiple Amazon niches side by side. |\n\n## Keywords & SEO\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_get_keywords` | Discover SEO and PPC keywords with marketplace metrics. |\n\n## Knowledge & Utilities\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_search_knowledge` | Search the AMZScout knowledge base. |\n| `amzscout_recommend_tool` | Recommend the most appropriate AMZScout tool for a specific use case. |\n| `amzscout_usage` | View your remaining token balance and usage statistics. |\n\n---\n\n## Use Cases\n\nAMZScout Skill + MCP helps AI agents perform real Amazon marketplace research across every stage of the selling journey.\n\n| Use Case | Description |\n|----------|-------------|\n| 🔍 Product Discovery | Find promising product opportunities using real marketplace data. |\n| 📊 Niche Validation | Evaluate demand, competition, pricing, and seasonality before launching. |\n| 🏆 Competitor Research | Analyze competing products, identify strengths and weaknesses, and benchmark performance. |\n| 🔑 Keyword Research | Discover high-value keywords, search intent, and long-tail opportunities. |\n| ✍️ Listing Optimization | Improve titles, bullet points, descriptions, and keyword coverage. |\n| 📈 PPC Planning | Build launch and optimization strategies using keyword and competitor data. |\n| 💰 Pricing Analysis | Compare prices, estimate sales potential, and identify pricing opportunities. |\n| 📉 Market Intelligence | Analyze historical trends, emerging niches, and marketplace dynamics. |\n\n---\n\n## How It Works\n\nMost MCP servers simply expose APIs and return raw marketplace data.\n\nAMZScout adds an intelligence layer between Amazon marketplace data and your AI assistant.\n\nAMZScout MCP data includes comprehensive Amazon product metrics, including estimated sales, revenue, pricing, profitability, listing quality, and competition-related data such as the number of sellers, seller types (FBA/FBM/Amazon), seller countries, and review counts. \n\nIt also includes up to two years of historical price, sales, and revenue data, along with keyword metrics such as monthly search volume, cpc, and organic keyword rankings.\n\n### Traditional MCP\n\n```text\nAI Agent\n      │\n      ▼\n MCP Server\n      │\n      ▼\n Amazon Marketplace Data\n```\n\nThe AI receives raw marketplace data and must interpret everything independently.\n\n### AMZScout Skill + MCP\n\n```text\nAI Agent\n      │\n      ▼\n AMZScout Skill\n      │\n      ▼\n AMZScout MCP\n      │\n      ▼\n Amazon Marketplace Data\n```\n\nBefore marketplace data reaches the AI, the built-in AMZScout Skill evaluates marketplace signals using proprietary analytical algorithms.\n\nInstead of raw data, your AI receives structured marketplace intelligence, including:\n\n- Product insights\n- Market validation\n- Competitor analysis\n- Keyword opportunities\n- Pricing insights\n- PPC insights\n- Actionable business guidance\n\n---\n\n## Prompt Library\n\nThese prompts work in ChatGPT, Claude, Cursor, CrewAI, OpenClaw, and other MCP-compatible AI clients.\n\n### Product Research\n\n- Find profitable Amazon product opportunities with low competition.\n- Suggest products under $40 that are lightweight and easy to source.\n- Compare these product ideas and recommend the best one to launch.\n- Find products with increasing demand and low competition.\n\n### Niche Validation\n\n- Validate this Amazon niche.\n- Is this niche saturated?\n- Analyze historical demand and seasonality.\n- Estimate the difficulty of entering this market.\n\n### Competitor Analysis\n\n- Analyze ASIN B0XXXXXXXX.\n- Compare this product against its top competitors.\n- Identify competitor strengths and weaknesses.\n- Find similar products with higher estimated sales.\n\n### Keyword Research\n\n- Find the best keywords for this product.\n- Group keywords by search intent.\n- Suggest long-tail keyword opportunities.\n- Build a keyword strategy for a new listing.\n\n### Listing Optimization\n\n- Review my Amazon listing.\n- Improve my product title.\n- Rewrite my bullet points.\n- Suggest missing keywords.\n- Optimize this listing for search visibility.\n\n### PPC Strategy\n\n- Build a launch PPC strategy.\n- Recommend campaign structure.\n- Suggest keyword bidding priorities.\n- Find ASINs for product targeting campaigns.\n\n### Pricing & Profitability\n\n- Estimate monthly sales.\n- Analyze pricing trends over the past two years.\n- Compare pricing with competitors.\n- Estimate revenue potential.\n\n### Market Intelligence\n\n- Show historical sales trends.\n- Compare the US and UK marketplaces.\n- Find fast-growing Amazon niches.\n- Identify emerging product opportunities.\n\n---\n\n## Quick Start\n\n### Getting an API Key\n\nVisit:\n\nhttps://learn.amzscout.net/amazon-product-api-for-ai-agents\n\nChoose the token plan that best fits your needs:\n\n| Plan | Price | Product Analyses | Usage Period | Recommended for |\n|------|-------|-------------------|--------------|------------------|\n| **1M Tokens**  | $39                  | Up to 50    | 30 days | Getting started and light usage |\n| **5M Tokens**  | ~~$195~~ **$99**     | Up to 250   | 30 days | Regular AI workflows |\n| **20M Tokens** | ~~$780~~ **$199**    | Up to 1,000 | 30 days | High-volume usage and AI agents |\n\nAfter completing your purchase, you'll receive an email containing:\n\n- Your personal **API Key**\n- Installation instructions for all supported AI clients\n\nUse your API Key to connect AMZScout Skill + MCP to your preferred AI client and start researching Amazon with real Amazon marketplace data.\n\n---\n\n## Installation Guides\n\n| AI Client | Installation Guide |\n|-----------|--------------------|\n| ChatGPT | https://learn.amzscout.net/how-to-install-skill-to-chatgpt |\n| Claude | https://learn.amzscout.net/how-to-install-skill-to-claude |\n| Cursor | https://learn.amzscout.net/how-to-install-skill-to-cursor |\n| CrewAI | https://learn.amzscout.net/how-to-install-skill-to-crewai |\n\n---\n\n## MCP Server\n\n### Server URL\n\n```text\nhttps://chatbot.amzscout.net/mcp\n```\n\n### Authentication\n\n```text\nAPI Key\n```\n\n---\n\n## Support\n\nIf you have questions about installation, configuration, or using AMZScout Skill + MCP, we're happy to help.\n\n📧 **support@amzscout.net**\n\n---\n\n## Documentation\n\nComplete documentation, installation guides, tutorials, and additional resources are available at:\n\n- https://learn.amzscout.net/amazon-product-api-for-ai-agents\n- https://learn.amzscout.net/how-to-install-skill-to-ai-agent\n- [`/tools`](./tools)\n\n---\n\n## Disclaimer\n\nData available through this service and AI-generated outputs are provided for informational purposes only and do not constitute professional or business advice.\n\nYour use of the AI agent is governed by your agreement with its provider. AMZScout is not affiliated with, endorsed by, or sponsored by Amazon or the AI agent provider.\n\nWhile AMZScout strives to provide accurate and up-to-date marketplace data, users are responsible for independently verifying information before making business decisions.\n\nYour use of this service is at your own risk.\n\n---\n\n## License\n\nThis repository is licensed under the MIT License.\n\n> [!NOTE]\n> This repository contains documentation and integration examples only. The AMZScout Skill + MCP service is proprietary software provided as a hosted service by AMZScout.\n"
+    "readme": "# Official AMZScout Skill + MCP for AI\n\n![AMZScout Skill + MCP](assets/github-cover.png)\n\n![License](https://img.shields.io/badge/License-MIT-green)\n![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)\n![Hosted Service](https://img.shields.io/badge/Hosted-Service-6f42c1)\n![AI Ready](https://img.shields.io/badge/AI-Ready-success)\n![Amazon Research](https://img.shields.io/badge/Amazon-Research-orange)\n\nConnect your AI to **real Amazon marketplace data** with the official **AMZScout Skill + MCP**.\n\nGet your API key here: https://learn.amzscout.net/amazon-product-api-for-ai-agents\n\n## Connection\n\nThis is a **remote (hosted) MCP server** — Streamable HTTP transport. Point your MCP client at the endpoint below; there is nothing to install.\n\n- **MCP endpoint (Streamable HTTP):** `https://chatbot.amzscout.net/mcp`\n- **Transport:** `streamable-http` (a legacy SSE endpoint is also available at `https://chatbot.amzscout.net/mcp/sse`)\n- **Authentication:** send your AMZScout API key as the `Authorization: Bearer <API_KEY>` header (or `?key=<API_KEY>` in the URL). Get a key at https://learn.amzscout.net/amazon-product-api-for-ai-agents\n\n```json\n{\n  \"mcpServers\": {\n    \"amzscout\": {\n      \"type\": \"streamable-http\",\n      \"url\": \"https://chatbot.amzscout.net/mcp\",\n      \"headers\": { \"Authorization\": \"Bearer YOUR_AMZSCOUT_API_KEY\" }\n    }\n  }\n}\n```\n\nUnlike a traditional MCP server that simply exposes APIs, AMZScout combines live marketplace data with proprietary analytical algorithms developed specifically for Amazon research. Instead of returning raw marketplace data, it delivers structured marketplace intelligence that AI assistants can immediately use to answer Amazon-related questions more accurately.\n\nWhether you're validating product ideas, researching competitors, discovering keywords, optimizing listings, or building PPC campaigns, AMZScout helps your AI make data-driven decisions based on real Amazon marketplace data - not assumptions.\n\n> [!IMPORTANT]\n> AMZScout provides AI-powered marketplace analysis based on Amazon marketplace data. AI-generated responses are intended for informational purposes only. Please review the **Disclaimer** section below for important legal information.\n\n---\n\n## Table of Contents\n\n- [Features](#features)\n- [Supported AI Clients](#supported-ai-clients)\n- [Supported Amazon Marketplaces](#supported-amazon-marketplaces)\n- [Supported Capabilities](#supported-capabilities)\n- [Available Tools](#available-tools)\n- [Use Cases](#use-cases)\n- [How It Works](#how-it-works)\n- [Prompt Library](#prompt-library)\n- [Quick Start](#quick-start)\n- [Installation Guides](#installation-guides)\n- [MCP Server](#mcp-server)\n- [Support](#support)\n- [Documentation](#documentation)\n- [Disclaimer](#disclaimer)\n- [License](#license)\n\n---\n\n## Features\n\n- 📊 Real Amazon marketplace data\n- 🔍 Product opportunity discovery\n- 📈 Niche validation\n- 🏆 Competitor analysis\n- 🔑 Keyword research\n- ✍️ Listing optimization\n- 🎯 PPC strategy generation\n- 💰 Sales estimates\n- 📉 Historical marketplace trends\n- 💵 Pricing analysis\n- 🌍 Cross-marketplace ASIN lookup\n- 🔁 Reseller & buy box insights\n- 🤖 AI-ready structured responses\n- 🧠 Marketplace intelligence powered by AMZScout\n- ⚡ Fast responses optimized for AI workflows\n\n---\n\n## Supported AI Clients\n\nOfficially supported AI clients:\n\n- Claude\n- ChatGPT (Plus and higher)\n- Cursor\n- CrewAI\n- OpenClaw\n\n> Other MCP-compatible AI clients are also supported.\n\n---\n\n## Supported Amazon Marketplaces\n\nAMZScout provides marketplace data across all major Amazon marketplaces:\n\n- 🇺🇸 United States\n- 🇨🇦 Canada\n- 🇲🇽 Mexico\n- 🇧🇷 Brazil\n- 🇬🇧 United Kingdom\n- 🇩🇪 Germany\n- 🇫🇷 France\n- 🇮🇹 Italy\n- 🇪🇸 Spain\n- 🇦🇺 Australia\n- 🇯🇵 Japan\n- 🇮🇳 India\n- 🇦🇪 United Arab Emirates\n- 🇸🇦 Saudi Arabia\n\n---\n\n## Supported Capabilities\n\n| Capability | Supported |\n|------------|:---------:|\n| Product Research | ✅ |\n| Product Discovery | ✅ |\n| Niche Validation | ✅ |\n| Competitor Analysis | ✅ |\n| Keyword Research | ✅ |\n| Listing Optimization | ✅ |\n| PPC Strategy | ✅ |\n| Sales Estimates | ✅ |\n| Pricing Analysis | ✅ |\n| Historical Marketplace Trends | ✅ |\n| Arbitrage & Resale | ✅ |\n| AI-ready Structured Responses | ✅ |\n\n---\n\n# Available Tools\n\nFull documentation for every tool is available in [`/tools`](./tools).\n\n## Product Research\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_analyze_product` | Retrieve complete marketplace data and insights for a single ASIN. |\n| `amzscout_compare_products` | Compare 2–5 Amazon products side by side. |\n| `amzscout_analyze_product_set` | Analyze and aggregate metrics across 2–100 ASINs. |\n| `amzscout_search_products` | Search Amazon products by keyword using marketplace data. |\n| `amzscout_find_by_brand` | Retrieve products published under a specific Amazon brand. |\n| `amzscout_locate_asin` | Find which Amazon marketplaces list an ASIN, with local prices and sales estimates. |\n| `amzscout_reseller_amazon` | Get buy box, offer, and sales-rank data for one ASIN — useful for online arbitrage. |\n\n## Market & Niche Research\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_analyze_niche` | Analyze demand, competition, pricing, and market health for a niche. |\n| `amzscout_compare_niches` | Compare multiple Amazon niches side by side. |\n\n## Keywords & SEO\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_get_keywords` | Discover SEO and PPC keywords with marketplace metrics. |\n\n## Knowledge & Utilities\n\n| Tool | Description |\n|------|-------------|\n| `amzscout_search_knowledge` | Search the AMZScout knowledge base. |\n| `amzscout_recommend_tool` | Recommend the most appropriate AMZScout tool for a specific use case. |\n| `amzscout_usage` | View your remaining token balance and usage statistics. |\n\n---\n\n## Use Cases\n\nAMZScout Skill + MCP helps AI agents perform real Amazon marketplace research across every stage of the selling journey.\n\n| Use Case | Description |\n|----------|-------------|\n| 🔍 Product Discovery | Find promising product opportunities using real marketplace data. |\n| 📊 Niche Validation | Evaluate demand, competition, pricing, and seasonality before launching. |\n| 🏆 Competitor Research | Analyze competing products, identify strengths and weaknesses, and benchmark performance. |\n| 🔑 Keyword Research | Discover high-value keywords, search intent, and long-tail opportunities. |\n| ✍️ Listing Optimization | Improve titles, bullet points, descriptions, and keyword coverage. |\n| 📈 PPC Planning | Build launch and optimization strategies using keyword and competitor data. |\n| 💰 Pricing Analysis | Compare prices, estimate sales potential, and identify pricing opportunities. |\n| 🌍 Cross-Marketplace Pricing | Find where an ASIN is sold across Amazon marketplaces and compare local prices. |\n| 🔁 Arbitrage & Resale | Analyze buy box ownership, offer counts, and seller competition for resale strategy. |\n| 📉 Market Intelligence | Analyze historical trends, emerging niches, and marketplace dynamics. |\n\n---\n\n## How It Works\n\nMost MCP servers simply expose APIs and return raw marketplace data.\n\nAMZScout adds an intelligence layer between Amazon marketplace data and your AI assistant.\n\nAMZScout MCP data includes comprehensive Amazon product metrics, including estimated sales, revenue, pricing, profitability, listing quality, and competition-related data such as the number of sellers, seller types (FBA/FBM/Amazon), seller countries, and review counts. \n\nIt also includes up to two years of historical price, sales, and revenue data, along with keyword metrics such as monthly search volume, cpc, and organic keyword rankings.\n\n### Traditional MCP\n\n```text\nAI Agent\n      │\n      ▼\n MCP Server\n      │\n      ▼\n Amazon Marketplace Data\n```\n\nThe AI receives raw marketplace data and must interpret everything independently.\n\n### AMZScout Skill + MCP\n\n```text\nAI Agent\n      │\n      ▼\n AMZScout Skill\n      │\n      ▼\n AMZScout MCP\n      │\n      ▼\n Amazon Marketplace Data\n```\n\nBefore marketplace data reaches the AI, the built-in AMZScout Skill evaluates marketplace signals using proprietary analytical algorithms.\n\nInstead of raw data, your AI receives structured marketplace intelligence, including:\n\n- Product insights\n- Market validation\n- Competitor analysis\n- Keyword opportunities\n- Pricing insights\n- PPC insights\n- Reseller & buy box insights\n- Cross-marketplace availability\n- Actionable business guidance\n\n---\n\n## Prompt Library\n\nThese prompts work in ChatGPT, Claude, Cursor, CrewAI, OpenClaw, and other MCP-compatible AI clients.\n\n### Product Research\n\n- Find profitable Amazon product opportunities with low competition.\n- Suggest products under $40 that are lightweight and easy to source.\n- Compare these product ideas and recommend the best one to launch.\n- Find products with increasing demand and low competition.\n\n### Niche Validation\n\n- Validate this Amazon niche.\n- Is this niche saturated?\n- Analyze historical demand and seasonality.\n- Estimate the difficulty of entering this market.\n\n### Competitor Analysis\n\n- Analyze ASIN B0XXXXXXXX.\n- Compare this product against its top competitors.\n- Identify competitor strengths and weaknesses.\n- Find similar products with higher estimated sales.\n\n### Keyword Research\n\n- Find the best keywords for this product.\n- Group keywords by search intent.\n- Suggest long-tail keyword opportunities.\n- Build a keyword strategy for a new listing.\n\n### Listing Optimization\n\n- Review my Amazon listing.\n- Improve my product title.\n- Rewrite my bullet points.\n- Suggest missing keywords.\n- Optimize this listing for search visibility.\n\n### PPC Strategy\n\n- Build a launch PPC strategy.\n- Recommend campaign structure.\n- Suggest keyword bidding priorities.\n- Find ASINs for product targeting campaigns.\n\n### Pricing & Profitability\n\n- Estimate monthly sales.\n- Analyze pricing trends over the past two years.\n- Compare pricing with competitors.\n- Estimate revenue potential.\n\n### Arbitrage & Reselling\n\n- On which Amazon marketplaces is ASIN B0XXXXXXXX sold, and what does it cost in each?\n- Who holds the buy box for this ASIN, and at what price?\n- How many FBA and FBM sellers compete on this listing?\n- Does Amazon sell this product itself?\n- Compare prices for this ASIN across all marketplaces where it's listed.\n\n### Market Intelligence\n\n- Show historical sales trends.\n- Compare the US and UK marketplaces.\n- Find fast-growing Amazon niches.\n- Identify emerging product opportunities.\n\n---\n\n## Quick Start\n\n### Getting an API Key\n\nVisit:\n\nhttps://learn.amzscout.net/amazon-product-api-for-ai-agents\n\nChoose the token plan that best fits your needs:\n\n| Plan | Price | In-depth Research Sessions | Usage Period | Recommended for |\n|------|-------|-------------------|--------------|------------------|\n| **1M Tokens**  | $39                  | 100+    | 30 days | Getting started and light usage |\n| **5M Tokens**  | ~~$195~~ **$99**     | 500+   | 30 days | Regular AI workflows |\n| **20M Tokens** | ~~$780~~ **$199**    | 2,000+ | 30 days | High-volume usage and AI agents |\n\nAfter completing your purchase, you'll receive an email containing:\n\n- Your personal **API Key**\n- Installation instructions for all supported AI clients\n\nUse your API Key to connect AMZScout Skill + MCP to your preferred AI client and start researching Amazon with real Amazon marketplace data.\n\n---\n\n## Installation Guides\n\n| AI Client | Installation Guide |\n|-----------|--------------------|\n| ChatGPT | https://learn.amzscout.net/how-to-install-skill-to-chatgpt |\n| Claude | https://learn.amzscout.net/how-to-install-skill-to-claude |\n| Cursor | https://learn.amzscout.net/how-to-install-skill-to-cursor |\n| CrewAI | https://learn.amzscout.net/how-to-install-skill-to-crewai |\n\n---\n\n## MCP Server\n\n### Server URL\n\n```text\nhttps://chatbot.amzscout.net/mcp\n```\n\n### Authentication\n\n```text\nAPI Key\n```\n\n---\n\n## Support\n\nIf you have questions about installation, configuration, or using AMZScout Skill + MCP, we're happy to help.\n\n📧 **support@amzscout.net**\n\n---\n\n## Documentation\n\nComplete documentation, installation guides, tutorials, and additional resources are available at:\n\n- https://learn.amzscout.net/amazon-product-api-for-ai-agents\n- https://learn.amzscout.net/how-to-install-skill-to-ai-agent\n- [`/tools`](./tools)\n\n---\n\n## Disclaimer\n\nData available through this service and AI-generated outputs are provided for informational purposes only and do not constitute professional or business advice.\n\nYour use of the AI agent is governed by your agreement with its provider. AMZScout is not affiliated with, endorsed by, or sponsored by Amazon or the AI agent provider.\n\nWhile AMZScout strives to provide accurate and up-to-date marketplace data, users are responsible for independently verifying information before making business decisions.\n\nYour use of this service is at your own risk.\n\n---\n\n## License\n\nThis repository is licensed under the MIT License.\n\n> [!NOTE]\n> This repository contains documentation and integration examples only. The AMZScout Skill + MCP service is proprietary software provided as a hosted service by AMZScout.\n"
   },
   "deploymentOptions": [
     {
@@ -30,6 +31,814 @@
       "installationMethod": "none",
       "isRecommended": true,
       "systemDependencies": []
+    }
+  ],
+  "tools": [
+    {
+      "name": "amzscout_analyze_product",
+      "description": "Full raw data for a single Amazon product by ASIN — price, estimated sales/revenue, reviews, rating, listing quality, sellers, plus sales/price/revenue history when available. Pure data fetch (no AI analysis) — reason over the returned data yourself. How to use: audit the product like a sourcing analyst — demand trend & seasonality from sales history, pricing direction & margin risk from price history and FBA fees, competition from sellers/reviews, listing quality from LQS, then conclude whether a new seller should enter (GO / NO-GO and what it would take). Marketplace: if the user has not named a country / Amazon domain in this conversation, ask them once which marketplace they work on and reuse that code for every later call in the chat; do not assume the US. Called without `marketplace`, this tool fetches nothing and answers \"MARKETPLACE NEEDED\". Money is in that marketplace's local currency.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asin": {
+            "description": "Amazon Standard Identification Number",
+            "type": "string"
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          }
+        },
+        "required": [
+          "asin"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Analyze Product",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_analyze_niche",
+      "description": "Market snapshot for an Amazon niche/keyword — top products by revenue plus computed aggregates (price/sales/revenue/review distributions, revenue concentration, brand spread). Pure data fetch (no AI analysis) — reason over the returned data yourself. How to use: judge niche attractiveness — demand concentration (revenueTop5SharePercent: high = winner-takes-all, low = fragmented/open), price bands and where the money sits, review counts as entry moats, brand dominance vs no-name spread, and standout products (high sales + weak rating/reviews = displacement opportunity).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 100,
+            "description": "Niche, category, or product search keyword"
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          },
+          "filters": {
+            "type": "object",
+            "properties": {
+              "minPrice": {
+                "description": "Minimum unit price, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxPrice": {
+                "description": "Maximum unit price, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "minEstSales": {
+                "description": "Minimum estimated monthly sales (units)",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxEstSales": {
+                "description": "Maximum estimated monthly sales (units)",
+                "type": "number",
+                "minimum": 0
+              },
+              "minEstRev": {
+                "description": "Minimum estimated monthly revenue, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxEstRev": {
+                "description": "Maximum estimated monthly revenue, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "minReviews": {
+                "description": "Minimum review count",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxReviews": {
+                "description": "Maximum review count",
+                "type": "number",
+                "minimum": 0
+              },
+              "minRating": {
+                "description": "Minimum average rating (0-5)",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              },
+              "maxRating": {
+                "description": "Maximum average rating (0-5)",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              }
+            },
+            "additionalProperties": false,
+            "description": "Filter products by price / sales / revenue / reviews / rating"
+          },
+          "count": {
+            "default": 100,
+            "description": "How many top products to pull from Amazon (5–100).",
+            "type": "integer",
+            "minimum": 5,
+            "maximum": 100
+          }
+        },
+        "required": [
+          "keyword"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Analyze Niche",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_compare_products",
+      "description": "Side-by-side raw data for 2–5 Amazon products by ASIN — price, sales/revenue estimates, reviews, listing quality, plus history when available. Pure data fetch (no AI analysis) — do the comparison yourself. For a single ASIN, analyzeProduct is the equivalent. How to use: compare demand (est. sales), revenue, review moat and rating, price positioning, listing quality, and history trends (growing vs declining), then give a verdict on which product is the stronger opportunity and why. Marketplace: if the user has not named a country / Amazon domain in this conversation, ask them once which marketplace they work on and reuse that code for every later call in the chat; do not assume the US. Called without `marketplace`, this tool fetches nothing and answers \"MARKETPLACE NEEDED\". Money is in that marketplace's local currency.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asins": {
+            "minItems": 2,
+            "maxItems": 5,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "2–5 ASINs to compare. Each must be a real Amazon ASIN (B0XXXXXXXX). 0/O-swapped prefixes are auto-corrected."
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          }
+        },
+        "required": [
+          "asins"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Compare Products",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_compare_niches",
+      "description": "Raw head-to-head data for 2–5 Amazon niches / category keywords — per-niche product sets plus computed aggregates (price/sales/revenue distributions, revenue concentration, brand spread). Pure data fetch (no AI analysis) — do the comparison yourself. For ASINs, compareProducts is the equivalent. How to use: weigh demand (total est. revenue/sales) against competition (review levels, brand concentration) and price levels per niche, then give a verdict on which niche is the better opportunity for a new seller and under what conditions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "minItems": 2,
+            "maxItems": 5,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 100,
+              "description": "Niche, category, or product search keyword"
+            },
+            "description": "2–5 niches / category keywords to compare head-to-head, e.g. [\"yoga mat\", \"resistance bands\"]."
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          },
+          "count": {
+            "description": "Products fetched per niche (default 10).",
+            "type": "integer",
+            "minimum": 3,
+            "maximum": 25
+          }
+        },
+        "required": [
+          "keywords"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Compare Niches",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_analyze_product_set",
+      "description": "Raw data across an explicit set of 2–100 ASINs — product rows plus computed aggregates (price/sales/revenue/review distributions, revenue concentration, brand spread). Pure data fetch (no AI analysis) — reason over the returned data yourself. To discover products from a keyword instead, analyzeNiche is the equivalent. How to use: treat the set as a mini-market — segment products into groups, spot where demand concentrates, flag outliers (price, sales, review anomalies), and summarize group-level signals. Marketplace: if the user has not named a country / Amazon domain in this conversation, ask them once which marketplace they work on and reuse that code for every later call in the chat; do not assume the US. Called without `marketplace`, this tool fetches nothing and answers \"MARKETPLACE NEEDED\". Money is in that marketplace's local currency.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asins": {
+            "minItems": 2,
+            "maxItems": 100,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "2–100 ASINs to fetch as a set (B0XXXXXXXX). 0/O-swapped prefixes are auto-corrected."
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          }
+        },
+        "required": [
+          "asins"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Analyze Product Set",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_reseller_amazon",
+      "description": "Buy box, competing offers and price/rank statistics for one Amazon ASIN — who owns the buy box and at what price, how ownership has split between sellers, FBA vs FBM offer counts, the live offer list with seller names and ratings, price levels over 30/90/180/365 days with all-time extremes, sales-rank drops, out-of-stock share, and buy box ownership history. Built for reseller / online-arbitrage questions, not private-label research — for demand and revenue estimates use analyzeProduct instead. Pure data fetch (no AI analysis). IMPORTANT: call it first WITHOUT `sections` — the summary alone answers most questions, and the reply lists which sections hold data for this ASIN. Only request sections when the summary is not enough; asking for all six returns several KB of detail you will rarely need. How to use: judge whether the listing is worth reselling — Amazon in the buy box or a single seller holding most of it means little room, many FBA offers means price competition, high out-of-stock share means supply gaps you could fill, and rank drops indicate how fast it sells. Marketplace: if the user has not named a country / Amazon domain in this conversation, ask them once which marketplace they work on and reuse that code for every later call in the chat; do not assume the US. Called without `marketplace`, this tool fetches nothing and answers \"MARKETPLACE NEEDED\". Money is in that marketplace's local currency.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asin": {
+            "description": "Amazon Standard Identification Number",
+            "type": "string"
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          },
+          "sections": {
+            "description": "Which parts of the data to return. Omit for a compact summary plus the list of sections available — request specific sections only when the summary does not answer the question. Options: \"buybox\" (who holds the buy box now, at what price, and how ownership split between sellers); \"competition\" (offer counts by fulfilment, cheapest FBA/FBM sellers, and the live offer list with seller names); \"pricing\" (current / 30 / 90 / 180 / 365-day price levels plus all-time low and high, per offer type); \"rank\" (sales rank levels and rank-drop counts, the closest available proxy for sales velocity); \"availability\" (how often the listing had no buyable offer, and the visible stock of Amazon and the buy box winner); \"history\" (buy box ownership changes over time, resolved to seller names).",
+            "minItems": 1,
+            "maxItems": 6,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "buybox",
+                "competition",
+                "pricing",
+                "rank",
+                "availability",
+                "history"
+              ]
+            }
+          }
+        },
+        "required": [
+          "asin"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Amazon Reseller Data",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_search_products",
+      "description": "Keyword search against Amazon — returns the top N products with price, sales, revenue, reviews, rating. Pure data fetch (no AI analysis). Best when you need raw product rows (specific sort order or filters); analyzeNiche additionally returns computed market aggregates on top of the rows. How to use: scan the rows for demand leaders, price clusters, and low-review listings that still sell — those are the entry-opportunity signals.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 100,
+            "description": "Search keyword / phrase."
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          },
+          "sort": {
+            "default": "revenue",
+            "description": "Result sort order. revenue/sales/rating/reviews descending; price-low ascending; newest by first-listed date.",
+            "type": "string",
+            "enum": [
+              "revenue",
+              "sales",
+              "newest",
+              "rating",
+              "reviews",
+              "price-low",
+              "price-high"
+            ]
+          },
+          "count": {
+            "default": 100,
+            "description": "How many products to return (1–100)",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "filters": {
+            "type": "object",
+            "properties": {
+              "minPrice": {
+                "description": "Minimum unit price, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxPrice": {
+                "description": "Maximum unit price, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "minEstSales": {
+                "description": "Minimum estimated monthly sales (units)",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxEstSales": {
+                "description": "Maximum estimated monthly sales (units)",
+                "type": "number",
+                "minimum": 0
+              },
+              "minEstRev": {
+                "description": "Minimum estimated monthly revenue, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxEstRev": {
+                "description": "Maximum estimated monthly revenue, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "minReviews": {
+                "description": "Minimum review count",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxReviews": {
+                "description": "Maximum review count",
+                "type": "number",
+                "minimum": 0
+              },
+              "minRating": {
+                "description": "Minimum average rating (0-5)",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              },
+              "maxRating": {
+                "description": "Maximum average rating (0-5)",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              }
+            },
+            "additionalProperties": false,
+            "description": "Filter products by price / sales / revenue / reviews / rating"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Search Products",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_find_by_brand",
+      "description": "List products under a specific Amazon brand. Pre-validates the brand name via cached AI check, then filters keyword-search results to rows whose `brand` field actually matches. On no-match, returns the brands that did appear in the keyword pool so callers can suggest alternatives. How to use: assess the brand's Amazon footprint — lineup breadth, price range, which products carry the revenue, and how strong its review moat is.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "brand": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 80,
+            "description": "Amazon brand name to search by"
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          },
+          "sort": {
+            "default": "revenue",
+            "type": "string",
+            "enum": [
+              "revenue",
+              "sales",
+              "newest",
+              "rating",
+              "reviews"
+            ]
+          },
+          "count": {
+            "default": 100,
+            "description": "How many products to return (1–100)",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "filters": {
+            "type": "object",
+            "properties": {
+              "minPrice": {
+                "description": "Minimum unit price, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxPrice": {
+                "description": "Maximum unit price, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "minEstSales": {
+                "description": "Minimum estimated monthly sales (units)",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxEstSales": {
+                "description": "Maximum estimated monthly sales (units)",
+                "type": "number",
+                "minimum": 0
+              },
+              "minEstRev": {
+                "description": "Minimum estimated monthly revenue, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxEstRev": {
+                "description": "Maximum estimated monthly revenue, in the marketplace's local currency",
+                "type": "number",
+                "minimum": 0
+              },
+              "minReviews": {
+                "description": "Minimum review count",
+                "type": "number",
+                "minimum": 0
+              },
+              "maxReviews": {
+                "description": "Maximum review count",
+                "type": "number",
+                "minimum": 0
+              },
+              "minRating": {
+                "description": "Minimum average rating (0-5)",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              },
+              "maxRating": {
+                "description": "Maximum average rating (0-5)",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              }
+            },
+            "additionalProperties": false,
+            "description": "Filter products by price / sales / revenue / reviews / rating"
+          }
+        },
+        "required": [
+          "brand"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Find Products by Brand",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_get_keywords",
+      "description": "Amazon keyword / SEO / PPC data for either a single product (ASIN-scope — terms the product ranks for) or a niche/category (keyword-scope — search data around the term). Every keyword row carries search volume, average sales, CPC and trend; ASIN-scope rows ALSO carry this product's own placement for that term — organic rank + page, sponsored page, and relevance score (rows the product does not rank for are marked \"not ranking\"). Pure data fetch (no AI analysis). How to use: pick high-volume / low-competition terms for SEO and PPC targeting, use CPC as ad-cost pressure, sum search volumes to gauge niche demand, and for ASIN-scope check organic vs sponsored ranks to spot listing-optimization gaps. Marketplace: if the user has not named a country / Amazon domain in this conversation, ask them once which marketplace they work on and reuse that code for every later call in the chat; do not assume the US. Called without `marketplace`, this tool fetches nothing and answers \"MARKETPLACE NEEDED\". Money is in that marketplace's local currency.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asin": {
+            "description": "ASIN-scope: keywords this product ranks for.",
+            "type": "string"
+          },
+          "keyword": {
+            "description": "Keyword-scope: search data around this niche term.",
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 100
+          },
+          "marketplace": {
+            "type": "string",
+            "enum": [
+              "COM",
+              "CO_UK",
+              "DE",
+              "FR",
+              "IT",
+              "ES",
+              "CA",
+              "COM_MX",
+              "COM_BR",
+              "IN",
+              "CO_JP",
+              "COM_AU",
+              "AE",
+              "SA"
+            ],
+            "description": "Amazon marketplace code — the one the user named, or the one they chose earlier in this conversation (ask once, then reuse it for every call). Never assume the US for an ASIN: without it, ASIN tools fetch nothing and answer \"MARKETPLACE NEEDED\". Money in results is in this marketplace's currency."
+          }
+        },
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Get Keywords",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_search_knowledge",
+      "description": "TF-IDF search across the AMZScout knowledge base (Amazon-seller tutorials, brand reference, glossary). Returns the top-K relevant chunks with title, source URL and text. Use this to ground answers in factual material.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 300,
+            "description": "Search phrase. 2-300 chars."
+          },
+          "topK": {
+            "default": 5,
+            "description": "How many knowledge chunks to return (1–20)",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Search Knowledge Base",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_recommend_tool",
+      "description": "Given a user use-case, returns the AMZScout tools & Sellerhook services catalog (with tracking links) so you can recommend the right AMZScout product/feature. Use for \"which AMZScout tool should I use for X\" questions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "useCase": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 300,
+            "description": "What the user is trying to do (e.g. \"find low-competition products\", \"validate a supplier\", \"track BSR\")."
+          }
+        },
+        "required": [
+          "useCase"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Recommend AMZScout Tool",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_usage",
+      "description": "The caller's AMZScout AI-agents token balance — remaining, used, and limit. Free — no tokens are charged for this call. How to use: answer \"how many tokens do I have left\", \"what's my usage / balance / limit\", or when a call fails on quota. Report the remaining figure first.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Token Usage",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "amzscout_locate_asin",
+      "description": "Find which Amazon marketplaces list an ASIN, and get its product link on every marketplace (amazon.com, .co.uk, .de, .fr, .it, .es, .ca, .com.mx, .com.br, .in, .co.jp, .com.au, .ae, .sa). For each marketplace where it is listed: title, price in that marketplace's local currency, estimated monthly sales. Paid: 1 000 tokens per marketplace checked, per ASIN (14 000 per ASIN). How to use: call it ONLY when the user asks where / on which Amazon marketplaces a product is sold, or wants its links on other marketplaces. Do NOT call it just to choose a marketplace for analysis — for that, ask the user once which marketplace they work on and reuse it for the whole conversation. Present the result as a list (country, link, local price, sales); if the user then wants analysis, pass the marketplace they pick to amzscout_analyze_product / amzscout_get_keywords.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asins": {
+            "minItems": 1,
+            "maxItems": 5,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "1–5 ASINs to locate (B0 + 8 characters). Pass several only when they will be analyzed together."
+          }
+        },
+        "required": [
+          "asins"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "annotations": {
+        "title": "Locate ASIN",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "amzscout-research",
+      "title": "AMZScout research skill",
+      "description": "Documentation of how the AMZScout tools on this server are typically used — which tool fits which question, how they chain, and how to turn the returned data into a clear seller-facing answer. Covers this server's own tools only."
     }
   ]
 }

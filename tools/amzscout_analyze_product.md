@@ -10,7 +10,7 @@ Returns full raw data for a single Amazon product by ASIN — price, estimated s
 | Name | Type | Required | Description |
 |------|------|----------|--------------|
 | `asin` | string | Yes | Amazon Standard Identification Number of the product to analyze |
-| `marketplace` | string | No | Amazon marketplace code. Default: `COM` (United States). One of: `COM`, `CO_UK`, `DE`, `FR`, `IT`, `ES`, `CA`, `COM_MX`, `COM_BR`, `IN`, `CO_JP`, `COM_AU`, `AE`, `SA` |
+| `marketplace` | string | Yes* | Amazon marketplace code. One of: `COM`, `CO_UK`, `DE`, `FR`, `IT`, `ES`, `CA`, `COM_MX`, `COM_BR`, `IN`, `CO_JP`, `COM_AU`, `AE`, `SA`. *Without it (and without `?marketplace=` in the connection URL) the tool fetches nothing and replies `MARKETPLACE NEEDED`, free of charge: the same ASIN is a separate listing on each marketplace, so it is never assumed to be the US. Ask the user once which marketplace they work on, then reuse it for the rest of the conversation. |
 
 ## Example Call
 ```json
@@ -26,6 +26,8 @@ Returns full raw data for a single Amazon product by ASIN — price, estimated s
 - Review count, rating, and listing quality score (LQS)
 - Seller count and buy box information
 - FBA fee estimates
+
+Prices, fees and revenue are in the marketplace's local currency.
 
 ## Related Tools
 - [`amzscout_compare_products`](./amzscout_compare_products.md) — compare 2–5 products side by side
