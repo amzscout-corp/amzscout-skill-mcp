@@ -1,7 +1,7 @@
 {
   "identifier": "amzscout-corp-amzscout-skill-mcp",
   "name": "Official AMZScout Skill + MCP for AI",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "connectionType": "remote",
   "description": "AMZScout Skill + MCP connects AI assistants to real Amazon marketplace data across 14 Amazon marketplaces: product and niche analysis, keyword and PPC research, brand catalogs, reseller and buy box insights, and cross-marketplace ASIN lookup, combined with AMZScout's proprietary analytical algorithms. Requires an API key obtained from https://learn.amzscout.net/amazon-product-api-for-ai-agents.",
   "cloudEndpoint": "https://chatbot.amzscout.net/mcp",
@@ -839,6 +839,15 @@
       "name": "amzscout-research",
       "title": "AMZScout research skill",
       "description": "Documentation of how the AMZScout tools on this server are typically used — which tool fits which question, how they chain, and how to turn the returned data into a clear seller-facing answer. Covers this server's own tools only."
+    }
+  ],
+  "resources": [
+    {
+      "name": "amzscout-marketplaces",
+      "title": "Amazon marketplaces reference",
+      "uri": "amzscout://reference/marketplaces",
+      "description": "Marketplace codes accepted by every AMZScout tool, with country, Amazon domain, local currency, product-link pattern and reseller-data coverage.",
+      "mimeType": "text/markdown"
     }
   ]
 }
